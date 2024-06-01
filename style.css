@@ -1,0 +1,179 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+hr {
+    width: 90%;
+    border: 0.5px solid #e8e8e8;
+}
+
+.webmap {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+#cesiumContainer {
+    width: 60%;
+    height: 100vh;
+}
+
+.chartContainer {
+    width: 80%;
+    left: 60%;
+    /* align-items: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: unset;
+    margin-top: 10px;
+    background-color: #f7f7f7;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#qualt-chart,
+#quant-chart,
+.buildingStats {
+    width: 100% !important;
+    height: auto !important;
+}
+
+.menu {
+    display: flex;
+    width: 40%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow-y: auto;
+}
+
+.menubuttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menuDiv {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.menuDiv b {
+    font-size: 12px;
+}
+
+.menuDiv .options {
+    padding: 10px;
+}
+
+.menuDiv .options input {
+    height: 10px;
+}
+
+.menuDiv .options label {
+    font-size: 12px;
+}
+
+/* ************************************** */
+
+#menu {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    padding: 5px;
+    display: none;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.icon {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    color: #fff;
+}
+
+.icon.moved {
+    transform: translateX(calc(100% + 220px));
+}
+
+.backdrop {
+    display: inline-block;
+    background: rgba(42, 42, 42, 0.7);
+    border-radius: 5px;
+    border: 1px solid #444;
+    color: #fff;
+    line-height: 140%;
+    font-size: small;
+    box-shadow: 0 0 10px 1px #000;
+}
+
+#legend {
+    position: relative;
+    left: 5px;
+    top: 5px;
+}
+
+.my-legend .legend-title {
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 90%;
+}
+
+.my-legend .legend-scale ul {
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0;
+    float: left;
+    list-style: none;
+}
+
+.my-legend .legend-scale ul li {
+    list-style: none;
+    margin-left: 0;
+    line-height: 18px;
+    margin-bottom: 2px;
+}
+
+.my-legend ul.legend-labels li span {
+    display: block;
+    float: left;
+    height: 16px;
+    width: 30px;
+    margin-right: 5px;
+    margin-left: 0;
+    border: 1px solid #999;
+}
+
+.my-legend a {
+    color: #777;
+}
+
+.individualStatsChart {
+    position: relative;
+    width: 75%;
+    height: auto;
+    background-color: #f7f7f7;
+    z-index: 999;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#stats-tag {
+    font-size: 12px;
+}
